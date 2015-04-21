@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Display {
 
 	public void questionDisplay() {
-		System.out.print("¬ведите мес€ца: \n ");
+		System.out.print("Enter the month : \n ");
 
 		Scanner scaner = new Scanner(System.in);
 		String inputLine = scaner.nextLine();
@@ -16,7 +16,7 @@ public class Display {
 			System.out.print(monthsenum.getOrderMonth());
 			
 		} catch (IllegalArgumentException e) {
-			System.out.println("ќшибка ввода, повторите попытку ");
+			System.out.println("Error, try again ");
 			questionDisplay();
 		}
 
